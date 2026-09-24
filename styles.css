@@ -92,7 +92,7 @@ h1 {
   padding: 0 0 16px;
   border-bottom: 3px solid var(--line);
   color: var(--accent);
-  font-size: clamp(2.15rem, 5vw, 3.25rem);
+  font-size: clamp(1.9rem, 3.8vw, 2.625rem);
   font-weight: 400;
   letter-spacing: 0.018em;
   line-height: 1.04;
@@ -222,7 +222,7 @@ mjx-container[display="true"] {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     letter-spacing: 0.01em;
   }
 
