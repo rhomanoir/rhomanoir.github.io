@@ -1,36 +1,43 @@
 <!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Роман — персональный сайт</title>
-  <meta name="description" content="Проекты, опыт и контакты Романа">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <main>
-    <section class="hero">
-      <p class="label">Привет, я Роман</p>
-      <h1>Создаю полезные цифровые продукты</h1>
-      <p class="description">
-        Здесь можно коротко рассказать о себе, опыте и направлении работы.
-      </p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Задачи и материалы для студентов" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Задачи для студентов</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='white'/%3E%3Cpath d='M16 10h32v44H16z' fill='none' stroke='%23111' stroke-width='4'/%3E%3Cpath d='M23 24h18M23 32h18M23 40h12' stroke='%23111' stroke-width='3'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: { "[+]": [["$", "$"]] },
+          processEscapes: true,
+        },
+      };
+    </script>
+    <script src="tasks.js" defer></script>
+    <script src="app.js" defer></script>
+    <script
+      id="MathJax-script"
+      src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <main class="document">
+      <h1>Задачи</h1>
 
-      <nav>
-        <a class="primary" href="#projects">Мои проекты</a>
-        <a href="https://github.com/rhomanoir">GitHub</a>
-      </nav>
-    </section>
+      <div id="topic-list"></div>
 
-    <section id="projects">
-      <h2>Проекты</h2>
+      <noscript>
+        <p>Для отображения списка задач необходимо включить JavaScript.</p>
+      </noscript>
 
-      <article>
-        <h3>Название проекта</h3>
-        <p>Короткое описание проекта и использованных технологий.</p>
-        <a href="#">Посмотреть проект →</a>
-      </article>
-    </section>
-  </main>
-</body>
+    </main>
+  </body>
 </html>
