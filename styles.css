@@ -123,6 +123,7 @@ h1::after {
 
 .topic {
   position: relative;
+  min-width: 0;
   border: 1px solid var(--line);
   background: var(--panel);
   box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.18);
@@ -156,6 +157,7 @@ h2 {
 .problem {
   --problem-pad-y: 17px;
   position: relative;
+  min-width: 0;
   margin: 0 20px;
   padding: var(--problem-pad-y) 18px var(--problem-pad-y) 34px;
   color: var(--ink);
@@ -170,13 +172,17 @@ h2 {
 
 .problem::before {
   position: absolute;
-  top: calc(var(--problem-pad-y) + 1em);
+  top: calc(var(--problem-pad-y) + 0.9375em);
   left: 12px;
   width: 6px;
   height: 6px;
   border: 1px solid var(--muted);
   content: "";
   transform: translateY(-50%) rotate(45deg);
+}
+
+.problem:has(mjx-container[display="true"])::before {
+  top: calc(var(--problem-pad-y) + 0.75em);
 }
 
 .problem-label {
@@ -187,6 +193,7 @@ h2 {
 }
 
 .answer {
+  min-width: 0;
   margin: -2px 20px 18px;
   padding-left: 34px;
 }
@@ -259,6 +266,7 @@ h2 {
 }
 
 .answer-body {
+  min-width: 0;
   margin-top: 14px;
   padding: 16px 18px 17px;
   border-left: 2px solid var(--accent);
@@ -311,7 +319,9 @@ mjx-container {
 }
 
 mjx-container[display="true"] {
+  max-width: 100%;
   margin: 1.3rem 0 !important;
+  font-size: 0.99rem !important;
   overflow-x: auto;
   overflow-y: hidden;
 }
