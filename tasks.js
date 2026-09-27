@@ -21,7 +21,7 @@ window.courseTopics = [
 
       {
         label: "Задача 4",
-        text: "Определите терм и электронную конфигурацию, к которым принадлежит функция: \\[ \\psi = \\frac{1}{\\sqrt{6}}\\left(Y_{22}Y_{21}Y_{20}+Y_{21}Y_{20}Y_{22}+Y_{20}Y_{22}Y_{21}-Y_{20}Y_{21}Y_{22}-Y_{22}Y_{20}Y_{21}-Y_{21}Y_{22}Y_{20}\\right) \\frac{1}{\\sqrt{3}}\\left(\\alpha\\alpha\\beta+\\alpha\\beta\\alpha+\\beta\\alpha\\alpha\\right). \\]",
+        text: "Определите терм и электронную конфигурацию, к которым принадлежит функция \\[ \\psi = \\frac{1}{\\sqrt{6}}\\left(Y_{22}Y_{21}Y_{20}+Y_{21}Y_{20}Y_{22}+Y_{20}Y_{22}Y_{21}-Y_{20}Y_{21}Y_{22}-Y_{22}Y_{20}Y_{21}-Y_{21}Y_{22}Y_{20}\\right) \\frac{1}{\\sqrt{3}}\\left(\\alpha\\alpha\\beta+\\alpha\\beta\\alpha+\\beta\\alpha\\alpha\\right). \\]",
         answer: "Электронная конфигурация — $d^3$, терм — $^4F$.",
       },
       {
